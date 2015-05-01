@@ -1,4 +1,4 @@
-SRC=wrapped
+SRC=basic
 SYS=$(shell uname -s)
 
 all:

@@ -1,0 +1,50 @@
+% tabular_star.tex - examples of using the tabular* environment
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+
+\begin{document}
+
+\title{Latex Tutorial 4 (Tables) Examples \\ Using tabular*}
+\author{Andrew Roberts}
+\maketitle
+
+Tabular* requires an extra argument before the column description for
+the user to supply the total width of the table. The following table has
+had its width set to be 3/4 of text width (i.e., page width - left
+margin - right margin).
+
+\vspace{\baselineskip}
+
+\begin{tabular*}{0.75\textwidth}{ | c | c | c | r | }
+     %{@{\extracolsep{\fill}}cccr}
+  \hline
+  label 1 & label 2 & label 3 & label 4 \\
+  \hline  % put a line under headers
+  item 1  & item 2  & item 3  & item 4  \\
+  \hline
+\end{tabular*}
+
+\vspace{\baselineskip}
+
+However, that doesn't look quite as intended. The columns are still at
+their natural width (just wide enough to fit their contents whilst the
+rows are as wide as the table width specified.  This looks very ugly.
+The reason for the mess is that you must also explicitly insert extra
+column space.
+
+\vspace{\baselineskip}
+
+\begin{tabular*}{0.75\textwidth}{@{\extracolsep{\fill}} | c | c | c | r | }
+  \hline
+  label 1 & label 2 & label 3 & label 4 \\
+  \hline
+  item 1  & item 2  & item 3  & item 4  \\
+  \hline
+\end{tabular*}
+
+\end{document}

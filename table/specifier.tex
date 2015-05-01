@@ -1,0 +1,71 @@
+% specifier.tex - examples on using the @{...} construct in the tabular
+%                 environment.
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+
+\begin{document}
+
+\title{Latex Tutorial 4 (Tables) Examples \\
+       @-expressions}
+
+\author{Andrew Roberts}
+\maketitle
+
+
+A common use of the @ specifier is to align scientific tables on the
+decimal place.
+
+\vspace{\baselineskip}
+
+\begin{tabular}{r@{.}l}
+3&14159\\
+16&2\\
+123&456\\
+\end{tabular}
+
+\vspace{\baselineskip}
+
+Examples for altering horizontal spacing:
+
+\vspace{\baselineskip}
+
+\begin{tabular}{| l | l |}
+\hline
+stuff & stuff \\ \hline
+stuff & stuff \\
+\hline
+\end{tabular}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{|@{}l|l@{}|}
+\hline
+stuff & stuff \\ \hline
+stuff & stuff \\
+\hline
+\end{tabular}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{|@{}l@{}|l@{}|}
+\hline
+stuff & stuff \\ \hline
+stuff & stuff \\
+\hline
+\end{tabular}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{|@{}l@{}|@{}l@{}|}
+\hline
+stuff & stuff \\ \hline
+stuff & stuff \\
+\hline
+\end{tabular}
+
+\end{document}
