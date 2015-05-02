@@ -1,4 +1,4 @@
-SRC=basic
+SRC=tabular_star
 SYS=$(shell uname -s)
 
 all:
