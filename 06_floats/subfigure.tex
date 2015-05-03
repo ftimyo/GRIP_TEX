@@ -1,0 +1,41 @@
+% subfigure.tex - Illustrating the use of the subfigure package
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\begin{document}
+
+\title{Latex Tutorial 6 (Floats, Figures and Captions) Examples}
+
+\author{Andrew Roberts}
+\maketitle
+
+\begin{figure}[htp]
+  \begin{center}
+    \subfigure[Original image]{\label{edge-a}\includegraphics[scale=0.75]{toucan.eps}}
+    \subfigure[After Laplace edge detection]{\label{edge-b}\includegraphics[scale=0.75]{laplace_toucan.eps}}
+    \subfigure[After Sobel edge detection]{\label{edge-c}\includegraphics[scale=0.75]{sobel_toucan.eps}}
+  \end{center}
+  \caption{Various edge detection algorithms}
+  \label{edge}
+\end{figure}
+
+The Sobel algorithm gives the best results (see \ref{edge-c}).
+
+\begin{figure}[htp]
+  \begin{center}
+    \subfigure[Original image]{\label{fig:edge-a}\includegraphics[scale=0.75]{toucan.eps}}
+    \subfigure[After Laplace edge detection]{\label{fig:edge-b}\includegraphics[scale=0.75]{laplace_toucan.eps}} \\
+    \subfigure[After Sobel edge detection]{\label{fig:edge-c}\includegraphics[scale=0.75]{sobel_toucan.eps}}
+  \end{center}
+  \caption{Various edge detection algorithms}
+  \label{fig:edge}
+\end{figure}
+
+\end{document}

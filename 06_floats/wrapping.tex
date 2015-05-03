@@ -1,0 +1,63 @@
+% wrapping.tex - Illustrating the wrapfig package for wrapping text
+%                around figures
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\begin{document}
+
+\title{Latex Tutorial 6 (Floats, Figures and Captions) Examples
+\thanks{Information about the Toucan was provided by Microsoft Encarta
+Online Encyclopedia 2003 (\texttt{http://encarta.msn.com})}}
+
+\author{Andrew Roberts}
+\maketitle
+
+\section*{Toucan}
+
+\begin{wrapfigure}{r}{40mm}
+  \begin{center}
+    \includegraphics{toucan.eps}
+  \end{center}
+  \caption{The Toucan}
+\end{wrapfigure}
+
+Toucan, common name for members of the bird family distinguished by
+colorful, enormous but lightweight beaks, that inhabit tropical America.
+The family includes six genera and about 40 species.
+
+
+Toucans range in size from 18 to 63 cm (from 7 to 25 in). The body is
+short and thick; the tail is rounded, varying in length in the different
+species from half the length to almost the whole length of the body. The
+neck is short and thick. At the base of the full width and depth of the
+head is a huge, brightly colored beak, measuring in some of the larger
+species more than half the length of the body. The tongue of the toucan
+is long, narrow, and singularly frayed on each side, possibly to add to
+its sensibility as an organ of taste. The legs are strong and rather
+short, with large scales. The toes are arranged in pairs, with the first
+and fourth turned backward. Males and females are alike in color. The
+plumage in the genus containing the largest toucans is generally black,
+with touches of white, yellow, and scarlet. In the smaller aracari
+toucans, the underparts are yellow, crossed by one or more black or red
+bands, and the edges of the upper half of the beak are prominently
+saw-toothed. The toucanets are mostly green, with blue markings.
+
+Toucans usually live in pairs or small flocks. They feed chiefly on
+fruit, and can manipulate small berries at the tip of the bill with
+great dexterity. They also eat small birds and lizards. They lay white,
+glossy eggs in hollows of trees, making little if any nest for them. The
+young are hatched completely naked, without any down.
+
+Scientific classification: Toucans make up the family
+\emph{Ramphastidae}. The largest toucans are classified in the genus
+\emph{Ramphastos}, the aracari toucans in the genus \emph{Pteroglossus},
+and the toucanets in the genus \emph{Aulacorhynchus}.
+
+\end{document}

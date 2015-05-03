@@ -1,0 +1,35 @@
+% new_float.tex - an example of using the float package to create a new
+%                 float type.
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{babel}
+\usepackage{times}
+\usepackage{float}
+
+\floatstyle{ruled}
+\newfloat{program}{thp}{lop}
+\floatname{program}{Program}
+
+\begin{document}
+
+\title{Latex Tutorial 6 (Floats, Figures and Captions) Examples}
+\author{Andrew Roberts}
+\maketitle
+
+\begin{program}
+  \begin{verbatim}
+
+class HelloWorldApp {
+  public static void main(String[] args) {
+    //Display the string
+    System.out.println("Hello World!");
+  }
+}
+\end{verbatim}
+  \caption{The Hello World! program in Java.}
+\end{program}
+
+\end{document}
