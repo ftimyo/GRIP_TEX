@@ -1,0 +1,155 @@
+% text.tex - examples of various text formatting techniques
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{times}
+\usepackage{babel}
+\usepackage{ulem}
+
+\begin{document}
+
+\normalem
+
+\title{Latex Tutorial 7 (Formatting) Examples}
+\author{Andrew Roberts}
+\maketitle
+
+\section{Text Formatting}
+
+\subsection{Quotes}
+
+\begin{tabular}{ l | l }
+
+\verb|To `quote' in Latex.| & To `quote' in Latex. \\
+\verb|To ``quote'' in Latex.| & To ``quote'' in Latex. \\
+\verb|To ``quote" in Latex.| & To ``quote" in Latex. \\
+\end{tabular}
+
+\subsection{Dots and Dashes}
+
+\begin{tabular}{l | l}
+\verb|Ellipsis...| & Ellipsis... \\
+\verb|Ellipsis \ldots| & Ellipsis \ldots \\
+\end{tabular}
+
+\vspace{\baselineskip}
+
+\begin{tabular}{| l | l | l |}
+\hline
+Input & Output & Purpose \\ \hline
+\verb|-| & - & inter-word \\
+\verb|--| & -- & page range, 1--10 \\
+\verb|---| & --- & punctuation dash --- like this \\
+\hline
+
+\end{tabular}
+
+\subsection{Accents}
+
+\begin{tabular}{| l l | l l |}
+\hline
+Command & Output & Command & Output \\
+\hline
+\verb|\`{o}| & \`{o} &
+\verb|\'{o}| & \'{o} \\
+\verb|\"{o}| & \"{o} &
+\verb|\H{o}| & \H{o} \\
+\verb|\^{o}| & \^{o} &
+\verb|\~{o}| & \~{o} \\
+\verb|\v{o}| & \u{o} &
+\verb|\={o}| & \={o} \\
+\verb|\b{o}| & \b{o} &
+\verb|\.{o}| & \.{o} \\
+\verb|\d{o}| & \d{o} &
+\verb|\c{o}| & \c{o} \\
+\verb|\r{o}| & \r{o} &
+\verb|\t{oo}| & \t{oo} \\
+\verb|\i| & \i & &\\
+\hline
+\end{tabular}
+
+\subsection{Symbols}
+
+\begin{tabular}{|l c | l c |}
+\hline
+Command & Symbol & Command & Symbol \\
+\hline
+\verb|\%| & \% &
+\verb|\#| & \# \\
+\verb|\$| & \$ &
+\verb|\&| & \& \\
+\verb|\{| & \{ &
+\verb|\}| & \} \\
+\verb|\_| & \_ &
+\verb|\S| & \S \\
+\verb|\P| & \P &
+\verb|\dag| & \dag \\
+\verb|\ddag| & \ddag &
+\verb|\textbackslash| & \textbackslash \\
+\verb|\textbar| & \textbar &
+\verb|\textless| & \textless \\
+\verb|\textgreater| & \textgreater &
+\verb|\textemdash| & \textemdash \\
+\verb|\textendash| & \textendash &
+\verb|\textregistered| & \textregistered \\
+\verb|\texttrademark| & \texttrademark &
+\verb|\textquestiondown| & \textquestiondown \\
+\verb|\textexclamdown| & \textexclamdown &
+\verb|\textcircled{a}| & \textcircled{a}\\
+\verb|\textsuperscript{a}| & \textsuperscript{a} &
+\verb|\copyright| & \copyright \\
+\verb|\pounds| & \pounds & & \\
+\hline
+\end{tabular}
+
+\subsection{Emphasizing Text}
+
+I want to \emph{emphasize} a word.
+
+\subsection{Font styles}
+
+\begin{tabular}{| l | l |}
+\hline
+Command & Style \\
+\hline
+\verb|\textnormal{...}| & \textnormal{document font family} \\ \hline
+\verb|\emph{...}| & \emph{emphasis} \\ \hline
+\verb|\textrm{...}| & \textrm{roman font family} \\ \hline
+\verb|\textsf{...}| & \textsf{sans serif font family} \\ \hline
+\verb|\texttt{...}| & \texttt{typewriter font family} \\ \hline
+\verb|\textup{...}| & \textup{upright shape} \\ \hline
+\verb|\textit{...}| & \textit{italic shape} \\ \hline
+\verb|\textsl{...}| & \textsl{slanted shape} \\ \hline
+\verb|\textsc{...}| & \textsc{small capitals} \\ \hline
+\verb|\textbf{...}| & \textbf{bold} \\ \hline
+\verb|\textmd{...}| & \textmd{normal weight and width} \\
+\hline
+\end{tabular}
+
+\vspace{\baselineskip}
+
+Using the \texttt{ulem} package, it is possible to \uline{underline}
+words, add \uwave{under-wave} and \sout{strike out}.
+
+\subsection{Font sizes}
+
+\begin{tabular}{| l | c |}
+\hline
+Command & Output \\
+\hline
+\verb|\tiny| & \tiny{sample text} \\
+\verb|\scriptsize| & \scriptsize{sample text} \\
+\verb|\footnotesize| & \footnotesize{sample text} \\
+\verb|\small| & \small{sample text} \\
+\verb|\normalsize| & \normalsize{sample text} \\
+\verb|\large| & \large{sample text} \\
+\verb|\Large| & \Large{sample text} \\
+\verb|\LARGE| & \LARGE{sample text} \\
+\verb|\huge| & \huge{sample text} \\
+\verb|\Huge| & \Huge{sample text} \\
+\hline
+\end{tabular}
+
+\end{document}

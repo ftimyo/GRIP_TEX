@@ -1,0 +1,107 @@
+% paras.tex - examples of paragraph formatting and special paragraph
+%             environments
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{babel}
+\usepackage{times}
+\usepackage{alltt}
+\usepackage{moreverb}
+
+\begin{document}
+
+\title{Latex Tutorial 7 (Formatting) Examples}
+\author{Andrew Roberts}
+\maketitle
+
+\section{Paragraph Formatting}
+
+\begin{flushleft}
+\texttt{Flushleft} is the default justification for a typical word
+processor.  It looks considerably less tidy than Latex's default full
+justified paragraphs
+\end{flushleft}
+
+\begin{flushright}
+\texttt{Flushright} does not the most useful alignment for basic
+paragraphs.  Has more use wi \end{flushright}
+
+\begin{center}
+The \texttt{center} has been seen many times in various examples from
+previous examples, although usually to align tables and figures, rather
+than text --- it works for all though!
+\end{center}
+
+\section{Special Paragraph Environments}
+\subsection{Verbatim}
+
+\begin{verbatim}
+The verbatim environment
+  simply reproduces every
+ character you input,
+including all  s p a c e s!
+\end{verbatim}
+
+\subsection{alltt}
+\begin{alltt}
+Verbatim extended with the ability
+to use normal commands.  Therefore, it
+is possible to \emph{emphasize} words in
+this environment, for example.
+\end{alltt}
+
+\subsection{Listing}
+
+\begin{listing}[2]{2}
+The first line,
+the second line,
+the third line,
+the forth line,
+and so on...
+\end{listing}
+
+\subsection{Quote and Quotation}
+
+Lots of text. Lots of text. Lots of text. Lots of text. Lots of text.
+Lots of text. Lots of text. Lots of text. Lots of text. Lots of text.
+
+\begin{quote}
+I can resist everything except temptation. \emph{(Oscar Wilde)}
+\end{quote}
+
+Lots of text. Lots of text. Lots of text. Lots of text. Lots of text.
+Lots of text. Lots of text. Lots of text. Lots of text. Lots of text.
+\begin{quotation} Roast beef and Yorkshire,
+or roast pork and apple sauce, followed up by suet pudding and driven
+home, as it were, by a cup of mahogany-brown tea, have put you in just
+the right mood\ldots In these blissful circumstances, what is it that
+you want to read about?
+
+Naturally, about a murder.
+\end{quotation}
+
+
+\subsection{Verse}
+
+Lyrics of 'I Am The Walrus' by \emph{The Beatles}.
+
+\begin{verse}
+I am he as you are he as you are me and we are all together \\
+See how they run like pigs from a gun see how they fly \\
+I'm crying \\
+Sitting on a cornflake \\
+Waiting for the van to come \\
+Corporation T-shirt, stupid bloody Tuesday \\
+Man you've been a naughty boy you let your face grow long
+
+I am the eggman \\
+They are the eggmen \\
+I am the walrus \\
+Goo goo g' joob
+
+\ldots
+\end{verse}
+
+\end{document}

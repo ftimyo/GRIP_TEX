@@ -1,0 +1,73 @@
+% lists.tex - examples of various list structures in Latex
+
+% Andrew Roberts - September 2003
+
+\documentclass[english]{article}
+
+\usepackage{babel}
+%\usepackage{times}
+\usepackage{pifont}
+
+\begin{document}
+
+\title{Latex Tutorial 7 (Formatting) Examples}
+\author{Andrew Roberts}
+\maketitle
+
+\section{List Structures}
+
+\subsection{Itemize}
+
+\begin{itemize}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{itemize}
+
+\subsection{Enumerate}
+
+\begin{enumerate}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{enumerate}
+
+\subsection{Description}
+
+\begin{description}
+  \item[First] The first item
+  \item[Second] The second item
+  \item[Third] The third etc \ldots
+\end{description}
+
+\section{Nested Lists}
+\begin{enumerate}
+  \item The first item
+  \begin{enumerate}
+    \item Nested item 1
+    \item Nested item 2
+  \end{enumerate}
+  \item The second item
+  \item The third etc \ldots
+\end{enumerate}
+
+\section{Customizing Lists}
+
+\renewcommand{\labelitemi}{\ding{43}}
+
+
+\begin{itemize}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{itemize}
+
+\begin{dinglist}{51}
+  \item The first item
+  \item The second item
+  \item The third etc \ldots
+\end{dinglist}
+
+
+
+\end{document}
